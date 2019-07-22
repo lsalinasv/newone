@@ -10,7 +10,6 @@ pipeline{
 	stage('Checking Docker'){
 			steps{
 				sh 'sudo docker ps'
-			}
 		}
 	}
 	stage('Build Docker'){
