@@ -13,5 +13,13 @@ pipeline{
 			}
 		}
 	}
+	stage('Build Docker'){
+		steps{
+			sh 'sudo docker build --tag=php54 .'
+			sh 'pwd'
+			sh 'ls'
+			}
+		}
+	}
 }
 
